@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="좋아하는 노래 설문조사">
+  <title>노래 설문조사</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    header, main, footer {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      width: auto;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎶 좋아하는 노래 설문조사 🎶</h1>
+    <nav>
+      <a href="#form">설문 시작하기</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="form">
+      <form action="/submit" method="post">
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">이메일</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="favSong">자신이 제일 좋아하는 노래는 무엇인가요?</label>
+        <textarea id="favSong" name="favSong" rows="3" placeholder="노래 제목과 가수 이름을 적어주세요"></textarea>
+
+        <label for="recommendSong">다른 사람에게 추천하고 싶은 노래가 있다면?</label>
+        <textarea id="recommendSong" name="recommendSong" rows="3" placeholder="추천하고 싶은 이유가 있다면 함께 적어주세요"></textarea>
+
+        <input type="submit" value="제출하기">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 노래 설문조사 | <a href="#">맨 위로</a></p>
+  </footer>
+</body>
+</html>
