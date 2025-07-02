@@ -2,8 +2,8 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="좋아하는 노래 설문조사">
-  <title>노래 설문조사</title>
+  <meta name="description" content="좋아하는 노래 및 아티스트 설문조사">
+  <title>노래 & 아티스트 설문조사</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -47,7 +47,7 @@
 </head>
 <body>
   <header>
-    <h1>🎶 좋아하는 노래 설문조사 🎶</h1>
+    <h1>🎶 좋아하는 노래 & 아티스트 설문조사 🎶</h1>
     <nav>
       <a href="#form">설문 시작하기</a>
     </nav>
@@ -67,6 +67,12 @@
 
         <label for="recommendSong">다른 사람에게 추천하고 싶은 노래가 있다면?</label>
         <textarea id="recommendSong" name="recommendSong" rows="3" placeholder="추천하고 싶은 이유가 있다면 함께 적어주세요"></textarea>
+
+        <label for="favArtist">좋아하는 아티스트는 누구인가요?</label>
+        <input type="text" id="favArtist" name="favArtist" placeholder="아티스트 이름을 적어주세요">
+
+        <label for="reasonArtist">그 아티스트를 좋아하게 된 계기는 무엇인가요?</label>
+        <textarea id="reasonArtist" name="reasonArtist" rows="3" placeholder="어떤 계기로 좋아하게 되었는지 자유롭게 적어주세요"></textarea>
 
         <input type="submit" value="제출하기">
       </form>
